@@ -5524,9 +5524,9 @@ body .search-modal .close:hover {
 /* ------------------------------------
     27. Contact Section CSS
 ---------------------------------------*/
-.rs-contact.main-home .contact-address {
+.rs-contact .main-home .contact-address {
   /*linear-gradient(rgba(237, 219, 209, 0.2), rgba(237, 219, 209, 0.2)), */
-  background-image: url(assets/images/contact/contacto_2.png);
+  /*background-image: url(assets/images/contact/contacto_2.png);*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
