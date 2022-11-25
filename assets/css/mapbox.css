@@ -1,0 +1,68 @@
+.menu-map {
+    background: #fff;
+    position: relative;
+    /*top: 10px;
+    right: 25px;*/
+    z-index: 1;
+    border-radius: 3px;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.4);
+    opacity:0.9;
+}
+
+    .menu-map a {
+        font-size: 14px;
+        color: #404040;
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding: 20px 20px 20px 20px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        text-align: left;
+    }
+
+    .menu-map i {
+        color: #c78e2c;
+        padding-right: 5px;
+    }
+
+.menu-map a:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+        .menu-map a:last-child {
+            border: none;
+            border-radius: 0 0 3px 3px;
+        }
+
+        .menu-map a:hover {
+            background: #f8f8f8;
+            color: #404040;
+        }
+
+    .menu-map a.active,
+    .menu-map a.active:hover {
+        background: #E6A700;
+        color: #FFF;
+    }
+
+/* para responsivo menu*/
+/*
+.menu-map a {
+    font-size: 10px;
+    color: #404040;
+    display: block;
+    margin: 0;
+    padding: 0;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    padding-left: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 20px;    
+}
+*/

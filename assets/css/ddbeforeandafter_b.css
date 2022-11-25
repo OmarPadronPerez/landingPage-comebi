@@ -1,0 +1,79 @@
+div.beforeandafter_b{ /* main container */
+	
+	display: block;
+	height: 434px; /* default height of main container */
+	overflow: hidden;
+	position: relative; 
+	width: 650px; /* default width of main container */
+}
+
+div.beforeandafter_b img{
+	max-width: none !important;
+}
+
+div.beforeb, div.afterb{ /* before and after DIVs within main container */
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	transition: width 0.4s ease-in-out; /* CSS transition. Actual duration set inside script (options.revealduration) */
+	width: 100%;
+	z-index: 7;
+}
+
+div.afterb{
+	z-index: 1; /* z-index of after div should be smaller than before's */
+}
+
+
+div.drag{ /* main div used for separating and dragging between before and after slides */
+	background: white;
+	cursor: col-resize;
+	display: block;
+	height: 100%;
+	left: 100%;
+	position: absolute;
+	top: 0;
+	transition: left 0.4s ease-in-out; /* transition. 0.4s sets duration of drag fade in time */
+	width: 2px; /* width of drag bar separator */
+	z-index: 7;
+}
+
+div.drag div.draghandle{ /* handle bar within drag interface */
+	background: #01545A;
+	height: 20%; /* height of drag handle */
+	position: absolute;
+	text-align: center;
+	width: 16px; /* width of drag handle */
+}
+
+.label-bottom_b div.beforeb span.caption_b, .label-bottom_b div.afterb span.caption_b{ /* CAS to syle SPAN caption. Optional */	
+	bottom: 10px;	
+	display: block;	
+	position: absolute;
+	right: 10px;	
+	text-align: center;	
+}
+
+.label-top div.beforeb span.caption_b, .label-top div.afterb span.caption_b{ /* CAS to syle SPAN caption. Optional */
+	top: 10px;	
+	display: block;	
+	position: absolute;
+	right: 10px;	
+	text-align: center;	
+}
+div.rs-image-comparision_b{
+	width: 100%;	
+	height: 600px;
+}
+.rs-image-comparision_b span.caption_b{
+	color: #fff;
+	background:#000;
+	width: 90px;	
+}
+
+div.beforeb span.caption_b{
+	left: 10px;
+	right: auto;
+}

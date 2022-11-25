@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Display a map on a webpage</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<!--<link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>-->
+
+<link href="bootstrap.min.css" rel="stylesheet">
+
+<script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+
+<script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+
+<!-- font-awesome css -->
+<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+
+<link href="mapbox.css?v=1.17" rel="stylesheet">
+
+<style>
+body { margin: 0; padding: 0; font-family: 'Dosis';}
+#map { position: relative; }
+</style>
+</head>
+<body>
+
+	<div class = "container-fluid">	
+
+		<div class="row ">
+				
+			
+			<nav class="menu-map col-12 col-md-3 col-lg-2  justify-content-center" id="menu-map">
+					<a href='#' class='col-5 col-md-12 active' data-filter='all'> Todos </a>
+
+					<!--<a href='#' class="col-5 col-md-12" data-filter='plaza'><i class="fa fa-shopping-bag"></i> Plazas Comerciales</a>-->
+
+					<a href='#' class="col-5 col-md-12" data-filter='supermercados_servicios'><i class="fa fa-shopping-cart"></i> Supermercados / Servicios</a>
+
+					<a href='#' class="col-5 col-md-12" data-filter='hospitales_farmacias'><i class="fa fa-plus-square"></i> Hospitales / Farmacias</a>
+
+					<a href='#' class="col-5 col-md-12" data-filter='escuelas'><i class="fa fa-book"></i> Escuelas</a>
+
+					<a href='#' class="col-5 col-md-12" data-filter='hoteles'><i class="fa fa-bed"></i> Hoteles</a>
+
+					<a href='#' class="col-5 col-md-12" data-filter='restaurant_food'><i class="fa fa-coffee"></i> Restaurant / Food Truck</a>
+
+					<a href='#' class="col-5 col-md-12" data-filter='parque'><i class="fa fa-tree"></i> Parques</a>
+		    </nav>
+
+			<div class = "col-12 col-md-9 col-lg-10 map" id='map' >
+				<!--<div id='map' ></div>-->
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="jquery-3.3.1.min.js"></script>
+
+	<script src="bootstrap.min.js"></script>
+	<script src="mapbox.js?v=1.23"></script>		
+<!--<script>
+	
+	mapboxgl.accessToken = 'pk.eyJ1Ijoib2xpdmExMjMiLCJhIjoiY2wzdDZzMHh1MXh6ajNib2VhcHR4dWx3ZSJ9.e1SYRWtDEVsfVaId3w5tAg';
+const map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [-100.93240, 22.10286], // starting position [lng, lat]
+zoom: 15 // starting zoom
+});
+</script>-->
+ 
+</body>
+</html>

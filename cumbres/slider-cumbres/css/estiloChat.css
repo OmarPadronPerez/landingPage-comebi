@@ -1,0 +1,15 @@
+.cambioColorChat{
+	background-color: #000 !important;
+}
+.click-desk-visitor img{
+	content:url("https://villasdeguanajuato.com.mx/img/casas-en-venta-en-guanajuato-villas-de-guanajuato-logo-chat.jpg")!important;
+}
+.click-desk-visitor img:after{
+	content:url("https://villasdeguanajuato.com.mx/img/casas-en-venta-en-guanajuato-villas-de-guanajuato-logo-chat.jpg")!important;
+}
+#cd_agent_image{
+	content:url("https://villasdeguanajuato.com.mx/img/casas-en-venta-en-guanajuato-villas-de-guanajuato-logo-chat.jpg")!important;
+}
+#cd_agent_image:after{
+	content:url("https://villasdeguanajuato.com.mx/img/casas-en-venta-en-guanajuato-villas-de-guanajuato-logo-chat.jpg")!important;
+}

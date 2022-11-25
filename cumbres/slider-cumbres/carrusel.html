@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es-MX" xmlns="https://www.w3.org/1999/xhtml/">
+<header>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	   	
+	   	<!--Bootstrap 3.2.0-->
+    	<link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+	    
+	<link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.min.css">
+
+		<link href="css/slider/custom.css" rel="stylesheet">
+		<link href="css/slider/owl.carousel.css" rel="stylesheet">
+	    <link href="css/slider/owl.theme.css" rel="stylesheet">
+
+	    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	    		<style>
+
+			@-webkit-keyframes zoom {
+			  from {
+			    -webkit-transform: scale(1, 1);
+			  }
+			  to {
+			    -webkit-transform: scale(1.5, 1.5);
+			  }
+			}
+
+			@keyframes zoom {
+			  from {
+			    transform: scale(1, 1);
+			  }
+			  to {
+			    transform: scale(1.5, 1.5);
+			  }
+			}
+
+			.carousel-inner .item > img {
+			  -webkit-animation: zoom 20s;
+			  animation: zoom 20s;
+			}
+
+			#botonVideo{
+				display:none;
+				position:absolute;
+				top:15%;
+				left:43%;
+				z-index:200;
+				/*width:60px;*/
+				border-radius:50px;
+				border:none;
+				background-color:transparent;
+			}
+			.carousel-control{
+				top:280px !important;
+				font-size:35px;
+			}
+			#flechaIz{
+				width:40px;
+				margin-right:180px;
+			}
+			#flechaDe{
+				width:40px;
+				margin-left:180px;
+			}
+			/*.verEscritorio{
+				
+			}
+			.verResponsive{
+				display:none !important;
+			}*/
+			@media (max-width: 1920px) {
+				.video {
+					min-height: 1030px;
+				}
+				.carousel-control{
+					top:280px !important;
+					font-size:35px;
+				}
+
+			}
+			@media (max-width: 1200px) {
+				.tamLogo{
+					width:200px;
+				}
+			}
+			@media (max-width: 1440px) {
+				.video {
+					min-height: 730px;
+				}
+				#flechaIz{
+					width:40px;
+					margin-right:180px;
+				}
+				#flechaDe{
+					width:40px;
+					margin-left:130px;
+				}
+			}
+			@media (max-width: 1366px) {
+				#flechaIz{
+					width:40px;
+					margin-right:180px;
+				}
+				#flechaDe{
+					width:40px;
+					margin-left:120px;
+				}
+			}
+			@media (max-width: 1280px) {
+				#flechaIz{
+					width:40px;
+					margin-right:180px;
+				}
+				#flechaDe{
+					width:40px;
+					margin-left:110px;
+				}
+				.carousel-control{
+					top:250px !important;
+					font-size:35px;
+				}
+			}
+			.col-md-5 {
+				width: 35% !important;
+			}
+			@media (max-width: 812px) {
+				.col-md-5 {
+					margin-top:360px;
+					width: 100% !important;
+				}
+				.container{
+					max-width: 100% !important;
+				}
+			}
+			@media (max-width: 736px) {
+				.col-md-5 {
+					margin-top:350px;
+				}
+				.container{
+					max-width: 100% !important;
+				}
+				/*.verEscritorio{
+					display:none !important;
+				}
+				.verResponsive{
+					display:initial !important;
+				}*/
+			}
+			@media (max-width: 667px) {
+				.col-md-5 {
+					margin-top:300px;
+				}
+				.container{
+					max-width: 100% !important;
+				}
+			}
+			@media (max-width: 568px) {
+				.col-md-5 {
+					margin-top:250px;
+				}
+				#flechaIz{
+					width:40px;
+					margin-left:-10px !important;
+				}
+				#flechaDe{
+					width:40px;
+					margin-left:60px !important;
+				}
+				#botonVideo{
+					display:initial;
+					top:35%;
+					left:40% !important;
+				}
+			}
+			@media (max-width: 480px) {
+				.col-md-5 {
+					margin-top:250px;
+				}
+				.container{
+					max-width: 100% !important;
+				}
+				#flechaIz{
+					width:40px;
+					margin-left:-10px !important;
+				}
+				#flechaDe{
+					width:40px;
+					margin-left:45px !important;
+				}
+				#botonVideo{
+					display:initial;
+					top:35%;
+					left:37% !important;
+				}
+			}
+			@media (max-width: 414px) {
+				.col-md-5 {
+					margin-top:220px;
+				}
+				.container{
+					max-width: 100% !important;
+				}
+				#flechaIz{
+					width:40px;
+					margin-left:-10px !important;
+				}
+				#flechaDe{
+					width:40px;
+					margin-left:35px !important;
+				}
+				.carousel-control{
+					top:220px !important;
+				}
+				#botonVideo{
+					display:initial;
+					top:10% !important;
+					left:37% !important;
+				}
+			}
+			@media (max-width: 375px) {
+				.col-md-5 {
+					margin-top:170px;
+				}
+				.container{
+					max-width: 100% !important;
+				}
+				#flechaDe{
+					width:40px;
+					margin-left:30px !important;
+				}
+				#botonVideo{
+					display:initial;
+					top:10% !important;
+					left:34% !important;
+				}
+			}
+			@media (max-width: 320px) {
+				.col-md-5 {
+					margin-top:170px;
+				}
+				.container{
+					max-width: 100% !important;
+				}
+				.debajoDeHeader{
+					margin-top:-80px;
+				}
+				#flechaDe{
+					width:40px;
+					margin-left:20px !important;
+				}
+				#botonVideo{
+					display:initial;
+					top:8% !important;
+					left:32% !important;
+				}
+			}
+			
+		.effect5{
+			box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
+			-moz-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
+			-webkit-box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
+			/*box-shadow: 0px 0px 10px 4px rgba(136,0,106,0.1);*/
+		}
+		.effect6{
+			box-shadow: 0px 0px 10px 4px rgba(136,0,106,0.2);
+			-moz-box-shadow: 0px 0px 10px 4px rgba(136,0,106,0.2);
+			-webkit-box-shadow: 0px 0px 10px 4px rgba(136,0,106,0.2);
+			/*box-shadow: 0px 0px 10px 4px rgba(136,0,106,0.2);*/
+		}
+			#headerEsc{
+				
+			}
+			#headerResp{
+				display:none;
+			}
+			#logoFormResp{
+				display:none;
+			}
+			#irArriba{
+				color:#fff !important;
+			}
+			input{
+				border: none;
+			}
+			@media (max-width:768px){
+				#gallery{
+					margin-left:0px !important;
+					margin-right:0px !important;
+				}
+				.gallery2{
+					margin-left:0px !important;
+					margin-right:0px !important;
+				}
+				#logoFormEsc{
+					display:none;
+				}
+				#logoFormResp{
+					display:initial;
+				}
+				#irArriba{
+					color:#000 !important;
+				}
+				input{
+					border: solid rgba(168,0,104,0.9) 1px !important;
+				}
+				.contform{
+					background:transparent;
+					 
+				}
+				#Formulario{
+					margin-bottom: 25px;
+					 position: unset !important;
+				}
+				#Desc{
+						left: 0px !important;
+					 position: absolute !important;
+					 top: 0px !important; 
+				}
+				.cambioTxtColor{
+					color:#000 !important;
+				}
+				#flechaIz{
+					width:40px;
+					margin-right:180px;
+				}
+				#flechaDe{
+					width:40px;
+					margin-left:80px;
+				}
+				.carousel-control{
+					top:220px !important;
+				}
+				#botonVideo{
+					display:initial;
+				}
+			}
+			@media (max-width:736px){
+				#headerEsc{
+					display:none !important;
+				}
+				#headerResp{
+					display:initial !important;
+				}
+				#bannerResp{
+					display:initial !important;
+				}
+				.imgCasas{
+					width:100% !important;
+				}
+				#flechaIz{
+					width:40px;
+					margin-left:-10px !important;
+				}
+				#flechaDe{
+					width:40px;
+					margin-left:80px;
+				}
+				#botonVideo{
+					display:initial;
+					top:35%;
+					left:43%;
+				}
+			}
+			@media (max-width:320px){
+				table td{
+					width:30% !important;
+					padding-left:10px !important;
+					padding-right:10px !important;
+				}
+				table td div{
+					font-size:15px !important;
+				}
+			}
+			.espacioDescTestim{
+				color:#000 !important;
+			}
+			.testimonial .carousel-control.left {
+				left:0px;
+			}
+			.testimonial .carousel-control.right {
+				right:0px;
+			}
+			.testimonial .carousel-control i {
+				background: #3B183F;
+			}
+			
+			.col-md-offset-2 {
+				margin-left:0px !important;
+			}
+			.col-md-8{
+				width:100% !important;
+			}
+
+
+/*Estilos whatsapp*/
+.sticky-btn--whatsapp {
+    background: #3B183F;
+    color: #fff;
+    font-size: 2em;
+    padding: 15px 20px;
+    line-height: 1;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: all .3s;
+}
+
+.sticky-btn {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    z-index: 1049;
+    box-shadow: 0 0 5px rgba(255,255,255,.5);
+}
+
+/*Estilos Facebook*/
+.sticky-btn--facebook {
+    background: #3B183F;
+    color: #fff;
+    font-size: 2em;
+    padding: 15px 20px;
+    line-height: 1;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: all .3s;
+}
+
+.sticky-facebook {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 1049;
+    box-shadow: 0 0 5px rgba(255,255,255,.5);
+}
+
+/*Estilos Instagram*/
+.sticky-btn--instagram {
+    background: #3B183F;
+    color: #fff;
+    font-size: 2em;
+    padding: 15px 20px;
+    line-height: 1;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: all .3s;
+}
+
+.sticky-instagram {
+    position: fixed;
+    right: 0;
+    top: 65%;
+    z-index: 1049;
+    box-shadow: 0 0 5px rgba(255,255,255,.5);
+}
+
+/*Estilos ver casas*/
+.sticky-btn--ver-casas {
+    position: fixed;
+    left: 0;
+    top: 35%;
+    z-index: 1049;
+    box-shadow: 0 0 5px rgba(255,255,255,.5);
+}
+
+
+.sticky-btn--ver-casas-2 {
+    background: #3B183F;
+    color: #fff;
+    font-size: 2em;
+    padding: 15px 20px;
+    line-height: 1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all .3s;
+}
+
+/*Estilos boton ver videos en pagina principal*/
+.sticky-btn--ver-videos {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    z-index: 1049;
+    box-shadow: 0 0 5px rgba(255,255,255,.5);
+}
+
+
+.sticky-btn--ver-videos-2 {
+    background: #3B183F;
+    color: #fff;
+    font-size: 2em;
+    padding: 15px 20px;
+    line-height: 1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: all .3s;
+}
+@media handheld, only screen and (max-width: 993px) {
+		.enunciado{
+			margin-top: 40px !important;
+			margin-left: 0px !important;
+		}
+		.enunciado h1{
+			font-size: 18px !important;
+		}
+}
+@media handheld, only screen and (max-width: 993px) {
+		.preventa p{
+			font-size: 10px !important;
+		}
+}
+</style>
+
+		<style>
+		video {
+		  width: 100%;
+		  height: auto;
+		}
+		</style>
+</header>
+<body>
+	<section id="gallery" class="generic"  style="background-color: #01545A; height:440px">
+    		<div class="container">
+				<!--<div style="/*margin-left:150px; margin-right:150px;*/">
+					<div>
+						<h2 class="animated tituloModelos" data-animation="flipInX" data-animation-delay="200" style="color:#777; text-align: center;"><span style="color:#3B183F;">Galería </span></h2>
+						<div style="color:#777; font-size:16px;"></div>
+					</div>
+			   </div>-->
+			   <!--<br><br><br><br><br><br>-->
+
+			   <h1 style="color:#E0A526; text-align: center; font-size: 50px; font-weight: 700;">PREVENTA DE CASAS</h1>
+			   
+
+			   <div id="screen" class="content-section-b">
+       
+		    		<div class="row wow bounceInUp" >
+              			<div id="owl-demo" class="owl-carousel" >
+							<a href="img/berlin-1.jpg" data-fancybox="gallery">
+								<div class="item animated" data-animation = "rotateIn" data-animation-delay="800">
+									
+									<img  class="img-responsive img-rounded" src="img/berlin-1.jpg" alt="Owl Image">
+								</div>
+								<div style="text-align: center; font-weight: 500; color: #fff; font-size:18px;">								
+									<span style="text-align: center;">Berlín opción de fachada 1 </span>	
+								</div>
+							</a>
+
+							<a href="img/berlin-2.jpg" data-fancybox="gallery">
+								<div class="item animated" data-animation = "rotateIn" data-animation-delay="800">
+									<img  class="img-responsive img-rounded" src="img/berlin-2.jpg" alt="Owl Image">
+																	
+								</div>
+								<div style="text-align: center; font-weight: 500; color: #fff; font-size:18px;">								
+									<span style="text-align: center;">Berlín opción de fachada 2</span>	
+								</div>
+							</a>
+										         					
+							<a href="img/malaga-1.jpg" data-fancybox="gallery">
+								<div class="item animated" data-animation = "rotateIn" data-animation-delay="800">
+									<img  class="img-responsive img-rounded" src="img/malaga-1.jpg" alt="Owl Image">
+								</div>
+								<div style="text-align: center; font-weight: 500; color: #fff; font-size:18px;">								
+									<span style="text-align: center;">Malaga opción de fachada 1</span>	
+								</div>
+							</a>
+							
+							<a href="img/malaga-2.jpg" data-fancybox="gallery">
+								<div class="item animated" data-animation = "rotateIn" data-animation-delay="800">
+									<img  class="img-responsive img-rounded" src="img/Malaga-2.jpg" alt="Owl Image">
+								</div>
+								<div style="text-align: center; font-weight: 500; color: #fff; font-size:18px;">								
+									<span style="text-align: center;">Malaga opción de fachada 2</span>	
+								</div>
+							</a>
+							<a href="img/praga-1.jpg" data-fancybox="gallery">
+								<div class="item animated" data-animation = "rotateIn" data-animation-delay="800">
+									<img  class="img-responsive img-rounded" src="img/praga-1.jpg" alt="Owl Image">
+								</div>
+								<div style="text-align: center; font-weight: 500; color: #fff; font-size:18px;">								
+									<span style="text-align: center;">Praga opción de fachada 1</span>	
+								</div>
+							</a>
+							<a href="img/praga-2.jpg" data-fancybox="gallery">
+								<div class="item animated" data-animation = "rotateIn" data-animation-delay="800">
+									<img  class="img-responsive img-rounded" src="img/praga-2.jpg" alt="Owl Image">
+								</div>
+								<div style="text-align: center; font-weight: 500; color: #fff; font-size:18px;">								
+									<span style="text-align: center;">Praga opción de fachada 2</span>	
+								</div>
+							</a>
+							<a href="img/roma-1.jpg" data-fancybox="gallery">
+								<div class="item animated" data-animation = "rotateIn" data-animation-delay="800">
+									<img  class="img-responsive img-rounded" src="img/roma-1.jpg" alt="Owl Image">
+								</div>
+								<div style="text-align: center; font-weight: 500; color: #fff; font-size:18px;">								
+									<span style="text-align: center;">Roma opción de fachada 1</span>	
+								</div>
+							</a>
+							<a href="img/roma-2.jpg" data-fancybox="gallery">
+								<div class="item animated" data-animation = "rotateIn" data-animation-delay="800">
+									<img  class="img-responsive img-rounded" src="img/roma-2.jpg" alt="Owl Image">
+								</div>
+								<div style="text-align: center; font-weight: 500; color: #fff; font-size:18px;">								
+									<span style="text-align: center;">Roma opción de fachada 2</span>	
+								</div>
+							</a>	
+							<a href="img/viena-1.jpg" data-fancybox="gallery">
+								<div class="item animated" data-animation = "rotateIn" data-animation-delay="800">
+									<img  class="img-responsive img-rounded" src="img/viena-1.jpg" alt="Owl Image">
+								</div>
+								<div style="text-align: center; font-weight: 500; color: #fff; font-size:18px;">								
+									<span style="text-align: center;">Viena opción de fachada 1</span>	
+								</div>
+							</a>
+							<a href="img/viena-2.jpg" data-fancybox="gallery">
+								<div class="item animated" data-animation = "rotateIn" data-animation-delay="800">
+									<img  class="img-responsive img-rounded" src="img/viena-2.jpg" alt="Owl Image">
+								</div>
+								<div style="text-align: center; font-weight: 500; color: #fff; font-size:18px;">								
+									<span style="text-align: center;">Viena opción de fachada 2</span>	
+								</div>
+							</a>							
+              			</div>       
+         			</div>
+        		</div>			   
+			</div>	
+		</section>
+</body>
+<script src="ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
+	    <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>-->
+	    <script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="fancybox/dist/jquery.fancybox.min.js"></script>
+<script src="js/slider/owl.carousel.js"></script>
+		<script src="js/slider/script.js"></script>
+		<script src="js/slider/wow.min.js"></script>
+		<script src="js/slider/jquery.magnific-popup.js"></script> 
+		
+
+</html>
