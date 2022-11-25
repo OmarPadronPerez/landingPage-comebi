@@ -1,8 +1,4 @@
-
-
-
-/*colores*/
-:root{
+:root{/*colores*/
   --color_principal: #00448c;
   --color_secundario: #c0d1e3;
 
@@ -29,15 +25,7 @@
 
 
 
-/**  
-* -----------------------------------------------------------------------------
-*
-* Template : Archtek - Architecture Consulting Business HTML Template
-* Author : reacthemes
-* Author URI : https://reactheme.com/ 
-* Version: 1.0
-*
-* -----------------------------------------------------------------------------   
+/**-----------------------------------------------------------------------------   
     TABLE OF CONTENT
 ---------------------------------------------------------
    01. General CSS
@@ -139,11 +127,6 @@ h5 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-}
-h6 {
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 500;
 }
 
 .modelo-interiores{
@@ -5524,7 +5507,7 @@ body .search-modal .close:hover {
 /* ------------------------------------
     27. Contact Section CSS
 ---------------------------------------*/
-.rs-contact .main-home .contact-address {
+.rs-contact.main-home .contact-address {
   /*linear-gradient(rgba(237, 219, 209, 0.2), rgba(237, 219, 209, 0.2)), */
   /*background-image: url(assets/images/contact/contacto_2.png);*/
   background-position: center center;
