@@ -2545,7 +2545,7 @@
     <script>
         AOS.init();
     </script>
-    <script>
+    <script defer>
         /*********************Modelo PRAGA*******************************/
         var iconButton = $("#modeloBtn1");
         iconButton.on("click", function () {
@@ -2712,7 +2712,7 @@
             /*****************************Fin modelo Málaga***************************************/
 
     </script>
-    <script type="text/javascript">
+    <script defer type="text/javascript">
         var auxiliar = 0;
         function contador() {
             $('.counter').each(function () {
@@ -2826,7 +2826,7 @@
         });   
     </script>
 
-    <script type="text/javascript">
+    <script defer type="text/javascript">
         function descarga() {
             var vj_nombre = document.getElementById("campo1").value;
             var vj_apellido = document.getElementById("campo2").value;
@@ -2840,9 +2840,7 @@
             var vj_informacion_requerida = "Solicitud de informes";
             var vj_aleatorio = Math.random();
             var ref = document.referrer;
-
             var vj_correo_valido = validarEmail(vj_email);
-
             var RutaBrochure = "https://casascomebi.mx/catalogos-casas-muestra/CDM_MAYO2022_TLMK.pdf";
             var vj_httpref = RutaBrochure;
             var url = window.location.href;
@@ -2981,7 +2979,7 @@
             }
         });
     </script>
-    <script type="text/javascript" id="zsiqchat" defer>
+    <script async type="text/javascript" id="zsiqchat" >
     var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "d71e1bfb086a9de64012a970416096e7fc2c05ab0e64e53edb99d0ce04e0cdcd", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);
     </script>
 </body>
