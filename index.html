@@ -77,7 +77,7 @@
     <!--<link rel="stylesheet" type="text/css" href="css/animation.css" />-->
 </head>
 
-<body class="defult-home">
+<body class="defult-home" >
 
     <!--Preloader start here-->
     <!--<div id="archtek-load">
@@ -90,7 +90,7 @@
     <!--Preloader area end here-->
 
     <!-- Main content Start -->
-    <div class="main-content">
+    <div class="main-content" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
         <style>
             .banner {
                 width: 100%;
@@ -460,11 +460,11 @@
                                 </div>
                                 <div class="col-lg-3 col-6 btn-part mt-13 mb-45"
                                     style="text-align: right; padding-top: 20px;">
-                                    <img alt="60 años contigo" src="img/60_anios_logo.png">
+                                    <img alt="60 años contigo" src="img/60_anios_logo.webp">
                                 </div>
                                 <div class="col-lg-4 col-6 btn-part mt-13 mb-45"
                                     style="text-align: center; padding-top: 20px;">
-                                    <img alt="arquitectos artigas" src="img/logo-artigas.png">
+                                    <img alt="arquitectos artigas" src="img/logo-artigas.webp">
                                 </div>
                             </div>
                             <div class="row y-middle">
@@ -654,7 +654,7 @@
             <div class="slider project-style1">
                 <div class="project-item">
                     <div class="project-img">
-                        <a href="#"><img src="img/SLIDE2/masterplan.jpg" loading="lazy" alt="masterplan"></a>
+                        <a href="#"><img src="img/SLIDE2/masterplan.webp" loading="lazy" alt="masterplan"></a>
                     </div>
                     <div class="project-content">
                         <div class="vertical-middle">
@@ -666,7 +666,7 @@
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="img/SLIDE2/1.jpg" loading="lazy" alt="Project">
+                        <img src="img/SLIDE2/1.webp" loading="lazy" alt="Project">
                     </div>
                     <div class="project-content">
                         <div class="vertical-middle">
@@ -678,7 +678,7 @@
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="img/SLIDE2/2.jpg" loading="lazy" alt="Project">
+                        <img src="img/SLIDE2/2.webp" loading="lazy" alt="Project">
                     </div>
                     <div class="project-content">
                         <div class="vertical-middle">
@@ -690,7 +690,7 @@
                 </div>
                 <div class="project-item">
                     <div class="project-img">
-                        <img src="img/SLIDE2/3.jpg" loading="lazy" alt="Project">
+                        <img src="img/SLIDE2/3.webp" loading="lazy" alt="Project">
                     </div>
                     <div class="project-content">
                         <div class="vertical-middle">
@@ -719,12 +719,12 @@
                             CONOCE NUESTROS PROTOTIPOS
                         </label>
                     </h2>
-                    <p class="desc margin-0"> Conoce nuestros 5 modelos con diseños exclusivos pensados en ti. <br>
+                    <p class="desc margin-0"> Conoce nuestros # modelos con diseños exclusivos pensados en ti. <br>
                     <h4> Desde $#*</h4>
                     </p>
                     <hr class="color-secundario"
                         style="height: 1px; margin-left: auto; margin-right: auto; width:50px; opacity:1.0;">
-                    <div class="row">
+                    <!--<div class="row">
                         <div class="col-lg-6 col-12">
                             <div class="btn-part">
                                 <a class="readon project read-more" href="#modelo-PRAGA">
@@ -739,12 +739,13 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <br>
                     <img loading="lazy" src="img/Tren-vivienda.webp" alt="tren de viviendas">
                 </div>
             </div>
         </div>
+
         <!-- Inicio Modelo 1-->
         <div id="modelo-PRAGA" class="rs-single-shop" data-aos="fade-up" data-aos-easing="ease-in-sine">
             <div class="container" style="width: 95% !important;">
@@ -754,24 +755,26 @@
                         <li class="col-10 col-sm-5 col-lg-3 nav-item " role="presentation" style="margin-bottom: 10px;">
                             <button class="boton-modelos nav-link active" id="modeloBtn1" data-bs-toggle="tab"
                                 data-bs-target="#modelo1" type="button" role="tab" aria-controls="modelo1"
-                                aria-selected="true">
+                                aria-selected="true" onclick="cambiarFrame(1,'opcion1')">
                                 <i class="fa fa-home"></i>
                                 &nbsp;&nbsp;MODELO 1</button>
                         </li>
                         <!--<li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
-                                <button class="boton-modelos nav-link" id="modeloBtn2" data-bs-toggle="tab" data-bs-target="#modelo2" type="button" role="tab" aria-controls="modelo2" aria-selected="false"><i class="fa fa-home"></i>
+                                <button class="boton-modelos nav-link" id="modeloBtn2" data-bs-toggle="tab" data-bs-target="#modelo2" 
+                                type="button" role="tab" aria-controls="modelo2" aria-selected="false"><i class="fa fa-home" 
+                                onclick="cambiarFrame(1,'opcion2')"></i>
                                     &nbsp;&nbsp;MODELO 2</button>
                             </li>-->
                         <li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
                             <button class="boton-modelos nav-link" id="plantasBtn" data-bs-toggle="tab"
                                 data-bs-target="#plantas" type="button" role="tab" aria-controls="plantas"
-                                aria-selected="false"><i class="fa fa-building-o"></i>
+                                aria-selected="false" onclick="cambiarFrame(1,'plantas')"><i class="fa fa-building-o" ></i>
                                 &nbsp;&nbsp;PLANTAS</button>
                         </li>
                         <li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
                             <button class="boton-modelos nav-link" id="interioresBtn" data-bs-toggle="tab"
                                 data-bs-target="#interiores" type="button" role="tab" aria-controls="interiores"
-                                aria-selected="false"><i class="fa fa-image"></i>
+                                aria-selected="false" onclick="cambiarFrame(1,'interiores')"><i class="fa fa-image" ></i>
                                 &nbsp;&nbsp;INTERIORES</button>
                         </li>
                     </ul>
@@ -779,7 +782,7 @@
                     <div class="tab-content">
 
                         <!--MODELO 1-->
-                        <div class="tab-pane fade show active" data-aos="slide-left" id="modelo1" role="tabpanel"
+                        <div class="tab-pane fade show active frame1Activo" data-aos="slide-left" id="frame1opcion1" role="tabpanel"
                             aria-labelledby="modelo1-tab">
                             <div class="row y-middle">
                                 <div class="col-lg-6 md-mb-50" style="padding-right: 10%;">
@@ -864,7 +867,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" data-aos="slide-left" id="modelo2" role="tabpanel"
+                        <div class="tab-pane fade" data-aos="slide-left" id="frame1opcion2" role="tabpanel"
                             aria-labelledby="modelo2-tab">
                             <!--<div class="row y-middle">                        
                                     <div class="col-lg-6 md-mb-50" style = "padding-right: 10%;">
@@ -931,7 +934,7 @@
                                 </div>-->
                         </div>
 
-                        <div class="tab-pane fade" data-aos="slide-left" id="plantas" role="tabpanel"
+                        <div class="tab-pane fade"  id="frame1plantas" role="tabpanel"
                             aria-labelledby="plantas-tab">
                             <div class="row">
                                 <div class="col-lg-12 md-mb-50" style="padding-right: 10%;">
@@ -949,8 +952,8 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-6 pl-30 md-pl-15">
-                                    <img loading="lazy" src="img/modelo1/planta baja.jpg"
+                                <div class="col-lg-6 pl-30 md-pl-15" >
+                                    <img loading="lazy" src="img/modelo1/planta baja.webp"
                                         style="top: -100px; z-index: -5; position: relative;" alt="Planta baja">
                                     <div class="row" style="top: -150px; z-index: -5; position: relative;">
                                         <div class="col-lg-4 col-6">
@@ -1021,7 +1024,7 @@
                                 </div>
                                 <div class="col-lg-6 pl-30 md-pl-15"
                                     style="top: -100px; z-index: -5; position: relative;">
-                                    <img loading="lazy" src="img/modelo1/planta alta.jpg" alt="Planta alta">
+                                    <img loading="lazy" src="img/modelo1/planta alta.webp" alt="Planta alta">
 
                                     <div class="row" style="top: -50px; position: relative;">
                                         <div class="col-lg-4 col-6">
@@ -1067,7 +1070,7 @@
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" data-aos="slide-left" id="interiores" role="tabpanel"
+                        <div class="tab-pane fade" data-aos="slide-left" id="frame1interiores" role="tabpanel"
                             aria-labelledby="interiores-tab">
                             <div class="row">
                                 <div class="col-lg-12 md-mb-50" style="padding-right: 10%;">
@@ -1095,7 +1098,7 @@
                 </div>
             </div>
         </div>
-        <!--Fin de Modelo PRAGA-->
+        <!--Fin de Modelo 1-->
 
         <div class="row pt-30" data-aos="fade-up" data-aos-easing="ease-in-sine">
             <div class="col-lg-1">
@@ -1114,39 +1117,41 @@
 
             </div>
         </div>
+
         <!--Inicio de modelo 2-->
-        <div id="modelo-malaga" class="rs-single-shop" data-aos="fade-up" data-aos-easing="ease-in-sine">
+        <div id="modelo2" class="rs-single-shop" data-aos="fade-up" data-aos-easing="ease-in-sine">
             <div class="container" style="width: 95% !important;">
                 <div class="tab-area">
                     <ul class="row nav nav-tabs justify-content-center" role="tablist" style="padding: 10px;">
                         <li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
                             <button class="boton-modelos nav-link boton-modelos active" id="modeloBtnM1"
                                 data-bs-toggle="tab" data-bs-target="#modeloM1" type="button" role="tab"
-                                aria-controls="modeloM1" aria-selected="true"><i class="fa fa-home"></i>
+                                aria-controls="modeloM1" aria-selected="true" onclick="cambiarFrame(2,'opcion1')" ><i class="fa fa-home"></i>
                                 &nbsp;&nbsp;MODELO 1</button>
                         </li>
                         <!--<li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
-                                <button class="boton-modelos nav-link" id="modeloBtnM2" data-bs-toggle="tab" data-bs-target="#modeloM2" type="button" role="tab" aria-controls="modeloM2" aria-selected="false"><i class="fa fa-home"></i>
+                                <button class="boton-modelos nav-link" id="modeloBtnM2" data-bs-toggle="tab" 
+                                data-bs-target="#modeloM2" type="button" role="tab" aria-controls="modeloM2" aria-selected="false"
+                                onclick="cambiarFrame(2,'opcion2')"><i class="fa fa-home"></i>
                                     &nbsp;&nbsp;MODELO 2</button>
                             </li>-->
                         <li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
                             <button class="boton-modelos nav-link boton-modelos" id="plantasBtnM" data-bs-toggle="tab"
                                 data-bs-target="#plantasM" type="button" role="tab" aria-controls="plantasM"
-                                aria-selected="false"><i class="fa fa-building-o"></i>
+                                aria-selected="false" onclick="cambiarFrame(2,'plantas')"><i class="fa fa-building-o" ></i>
                                 &nbsp;&nbsp;PLANTAS</button>
                         </li>
                         <li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
                             <button class="boton-modelos nav-link" boton-modelos id="interioresBtnM"
                                 data-bs-toggle="tab" data-bs-target="#interioresM" type="button" role="tab"
-                                aria-controls="interioresM" aria-selected="false"><i class="fa fa-image"></i>
+                                aria-controls="interioresM" aria-selected="false" onclick="cambiarFrame(2,'interiores')">
+                                <i class="fa fa-image"></i>
                                 &nbsp;&nbsp;INTERIORES</button>
                         </li>
                     </ul>
 
                     <div class="tab-content">
-
-                        <!--MODELO PRAGA-->
-                        <div class="tab-pane fade show active" data-aos="slide-left" id="modeloM1" role="tabpanel"
+                        <div class="tab-pane fade show active frame2Activo" data-aos="slide-left" id="frame2opcion1" role="tabpanel"
                             aria-labelledby="modeloM1-tab">
                             <div class="row y-middle">
                                 <div class="col-lg-6 md-mb-50" style="padding-right: 10%;">
@@ -1232,7 +1237,7 @@
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" data-aos="slide-left" id="modeloM2" role="tabpanel"
+                        <div class="tab-pane fade" data-aos="slide-left" id="frame2opcion2" role="tabpanel"
                             aria-labelledby="modelo2-tab">
                             <!--<div class="row y-middle">                        
                                     <div class="col-lg-6 md-mb-50" style = "padding-right: 10%;">
@@ -1300,7 +1305,7 @@
                                 </div>-->
                         </div>
 
-                        <div class="tab-pane fade" data-aos="slide-left" id="plantasM" role="tabpanel"
+                        <div class="tab-pane fade" data-aos="slide-left" id="frame2plantas" role="tabpanel"
                             aria-labelledby="plantas-tab">
                             <div class="row">
                                 <div class="col-lg-12 md-mb-50" style="padding-right: 10%;">
@@ -1319,7 +1324,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 pl-30 md-pl-15">
-                                    <img src="img/modelo2/planta baja.jpg"
+                                    <img src="img/modelo2/planta baja.webp"
                                         loading="lazy" style="top: -100px; z-index: -5; position: relative;" alt="planta baja">
                                     <div class="row" style="top: -150px; z-index: -5; position: relative;">
                                         <div class="col-lg-4 col-6">
@@ -1396,7 +1401,7 @@
                                 </div>
                                 <div class="col-lg-6 pl-30 md-pl-15"
                                     style="top: -100px; z-index: -5; position: relative;">
-                                    <img src="img/modelo2/planta alta.jpg" loading="lazy" alt="planta alta">
+                                    <img src="img/modelo2/planta alta.webp" loading="lazy" alt="planta alta">
 
                                     <div class="row" style="top: -50px; position: relative;">
                                         <div class="col-lg-4 col-6">
@@ -1434,7 +1439,7 @@
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" data-aos="slide-left" id="interioresM" role="tabpanel"
+                        <div class="tab-pane fade" data-aos="slide-left" id="frame2interiores" role="tabpanel"
                             aria-labelledby="interiores-tab">
                             <div class="row">
                                 <div class="col-lg-12 md-mb-50" style="padding-right: 10%;">
@@ -1463,7 +1468,7 @@
                 </div>
             </div>
         </div>
-        <!--Fin Modelo Málaga-->
+        <!--Fin Modelo 2-->
 
         <div class="row pt-50" data-aos="fade-up" data-aos-easing="ease-in-sine">
             <div class="col-lg-1">
@@ -1482,6 +1487,7 @@
 
             </div>
         </div>
+
         <!--Inicio de modelo 3-->
         <div id="modelo-viena" class="rs-single-shop" data-aos="fade-up" data-aos-easing="ease-in-sine">
             <div class="container" style="width: 95% !important;">
@@ -1490,31 +1496,33 @@
                         <li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
                             <button class="boton-modelos nav-link active" id="modeloBtnV1" data-bs-toggle="tab"
                                 data-bs-target="#modeloV1" type="button" role="tab" aria-controls="modeloV1"
-                                aria-selected="true"><i class="fa fa-home"></i>
+                                aria-selected="true" onclick="cambiarFrame(3,'opcion1')"><i class="fa fa-home"></i>
                                 &nbsp;&nbsp;MODELO 1</button>
                         </li>
                         <!--<li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
-                                <button class="boton-modelos nav-link" id="modeloBtnV2" data-bs-toggle="tab" data-bs-target="#modeloV2" type="button" role="tab" aria-controls="modeloV2" aria-selected="false"><i class="fa fa-home"></i>
+                                <button class="boton-modelos nav-link" id="modeloBtnV2" data-bs-toggle="tab" 
+                                data-bs-target="#modeloV2" type="button" role="tab" aria-controls="modeloV2" 
+                                aria-selected="false" onclick="cambiarFrame(3,'opcion2')"><i class="fa fa-home"></i>
                                     &nbsp;&nbsp;MODELO 2</button>
                             </li>-->
                         <li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
                             <button class="boton-modelos nav-link" id="plantasBtnV" data-bs-toggle="tab"
                                 data-bs-target="#plantasV" type="button" role="tab" aria-controls="plantasV"
-                                aria-selected="false"><i class="fa fa-building-o"></i>
+                                aria-selected="false" onclick="cambiarFrame(3,'plantas')"><i class="fa fa-building-o"></i>
                                 &nbsp;&nbsp;PLANTAS</button>
                         </li>
                         <li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
                             <button class="boton-modelos nav-link" id="interioresBtnV" data-bs-toggle="tab"
                                 data-bs-target="#interioresV" type="button" role="tab" aria-controls="interioresV"
-                                aria-selected="false"><i class="fa fa-image"></i>
+                                aria-selected="false" onclick="cambiarFrame(3,'interiores')"><i class="fa fa-image"></i>
                                 &nbsp;&nbsp;INTERIORES</button>
                         </li>
                     </ul>
 
                     <div class="tab-content">
 
-                        <!--MODELO BERLÍN-->
-                        <div class="tab-pane fade show active" data-aos="slide-left" id="modeloV1" role="tabpanel"
+                        <!--MODELO opcion1-->
+                        <div class="tab-pane fade show active frame3Activo" id="frame3opcion1" data-aos="slide-left" id="modeloV1" role="tabpanel"
                             aria-labelledby="modeloV1-tab">
                             <div class="row y-middle">
                                 <div class="col-lg-6 md-mb-50" style="padding-right: 10%;">
@@ -1601,12 +1609,12 @@
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" data-aos="slide-left" id="modeloV2" role="tabpanel"
+                        <div class="tab-pane fade" data-aos="slide-left" id="frame3opcion2" role="tabpanel"
                             aria-labelledby="modeloV2-tab">
-                            
+                            <!--segundo modelo -->
                         </div>
 
-                        <div class="tab-pane fade" data-aos="slide-left" id="plantasV" role="tabpanel"
+                        <div class="tab-pane fade" data-aos="slide-left" id="frame3plantas" role="tabpanel"
                             aria-labelledby="plantas-tab">
                             <div class="row">
                                 <div class="col-lg-12 md-mb-50" style="padding-right: 10%;">
@@ -1725,7 +1733,7 @@
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" data-aos="slide-left" id="interioresV" role="tabpanel"
+                        <div class="tab-pane fade" data-aos="slide-left" id="frame3interiores" role="tabpanel"
                             aria-labelledby="interiores-tab">
                             <div class="row">
                                 <div class="col-lg-12 md-mb-50" style="padding-right: 10%;">
@@ -1773,288 +1781,7 @@
 
             </div>
         </div>
-        <!--Inicio de modelo 4-->
-        <div id="modelo-berlin" class="rs-single-shop" data-aos="fade-up" data-aos-easing="ease-in-sine">
-            <div class="container" style="width: 95% !important;">
-                <div class="tab-area">
-                    <ul class="row nav nav-tabs justify-content-center" role="tablist" style="padding: 10px;">
-                        <li class="col-10 col-sm-5 col-lg-3 nav-item justify-content-center" role="presentation"
-                            style="margin-bottom: 10px;">
-                            <button class="boton-modelos nav-link active" id="modeloBtnB1" data-bs-toggle="tab"
-                                data-bs-target="#modeloB1" type="button" role="tab" aria-controls="modeloB1"
-                                aria-selected="true"><i class="fa fa-home"></i>
-                                &nbsp;&nbsp;MODELO 1</button>
-                        </li>
-
-                        <li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
-                            <button class="boton-modelos nav-link" id="plantasBtnB" data-bs-toggle="tab"
-                                data-bs-target="#plantasB" type="button" role="tab" aria-controls="plantasB"
-                                aria-selected="false"><i class="fa fa-building-o"></i>
-                                &nbsp;&nbsp;PLANTAS</button>
-                        </li>
-                        <li class="col-10 col-sm-5 col-lg-3 nav-item" role="presentation" style="margin-bottom: 10px;">
-                            <button class="boton-modelos nav-link" id="interioresBtnB" data-bs-toggle="tab"
-                                data-bs-target="#interioresB" type="button" role="tab" aria-controls="interioresB"
-                                aria-selected="false"><i class="fa fa-image"></i>
-                                &nbsp;&nbsp;INTERIORES</button>
-                        </li>
-                    </ul>
-
-                    <div class="tab-content">
-
-                        <!--MODELO 4-->
-                        <div class="tab-pane fade show active" data-aos="slide-left" id="modeloB1" role="tabpanel"
-                            aria-labelledby="modeloB1-tab">
-                            <div class="row y-middle">
-                                <div class="col-lg-6 md-mb-50" style="padding-right: 10%;">
-                                    <div class="sec-title" style="text-align: right;">
-                                        <h2 class="title2 pb-17"
-                                            style="color:var(--color_principal); font-size: 42px; font-weight: 500; text-align: left; margin: 0px; padding-left: 5%;">
-                                            <!--<span class="watermark">Modelos</span>-->
-                                            <span class="color-principal"
-                                                style="font-size: 30px; letter-spacing: 3px;">MODELO <span
-                                                    class="color-principal"
-                                                    style="font-size: 42px;"><strong>modelo4</strong></span>
-                                                <hr class="color-secundario" style="opacity:1; width:60%;">
-                                        </h2>
-                                        <div class="row y-middle" id="Precios">
-                                            <div class="col-lg-12 col-md-12 col-12">
-                                                <div class="counter-item plus">
-                                                    <div class="rs-counter about" style="padding: 0px !important;">
-                                                        <div class="counter-item" style="text-align: right;">
-                                                            <p style="padding-right: 50px; margin-bottom: 0px;">DESDE
-                                                            </p>
-                                                            <h3 data-count="2012744" style="font-size: 32px;">
-                                                                $#*</h3>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="rs-about style1 col-lg-12 pl-27 md-pl-15">
-                                                <div class="row" style="margin-bottom: 0px;">
-                                                    <div class="box-wrapper box-1 col-lg-6 col-12 mb-10">
-                                                        <div class="icon-box">
-                                                            <i class="fa fa-bed"></i>
-                                                        </div>
-                                                        <h4 class="box-title" style="padding-left: 5px;"> &nbsp;&nbsp;3
-                                                            Recámaras</h4>
-                                                    </div>
-                                                    <div class="box-wrapper box-2 col-lg-6 col-12 mb-10">
-                                                        <h4 class="box-title-2"
-                                                            style="padding-left: 5px; line-height: 0px;"> &nbsp;&nbsp;2
-                                                            1/2 Baños</h4>
-                                                        <div class="icon-box-2" style="padding-left: 10px;">
-                                                            <i class="fa fa-shower"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row" style="margin-bottom: 0px;">
-                                                    <div class="box-wrapper box-1 col-lg-6 col-12 mb-10">
-                                                        <div class="icon-box">
-                                                            <i class="fa fa-home"></i>
-                                                        </div>
-                                                        <h4 class="box-title" style="padding-left: 5px;">
-                                                            &nbsp;&nbsp;Construcción # m<sup>2</sup> </h4>
-                                                    </div>
-                                                    <div class="box-wrapper box-2 col-lg-6 col-12 mb-10">
-                                                        <h4 class="box-title-2"
-                                                            style="padding-left: 5px; line-height: 0px;">
-                                                            &nbsp;&nbsp;Terreno # m<sup>2</sup> </h4>
-                                                        <div class="icon-box-2" style="padding-left: 10px;">
-                                                            <i class="fa fa-border"></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="btn-part mt-13 mb-45 informes-div">
-                                                <a class="readon project read-more" href="#rs-contacto">
-                                                    <div class="text-btn"><span>Solicitar informes</span></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 pl-30 md-pl-15 ">
-                                    <div class="btn-part informes-div">
-                                        <a class="readon project read-more" href="#" target="_blank">
-                                            <div class="text-btn"><span>Ver recorrido virtual 360° </span></div>
-                                        </a>
-                                    </div>
-                                    <a class="image-link" href="img/modelo4/FACHADA.webp">
-                                        <img src="img/modelo4/FACHADA.webp" loading="lazy" alt="Project"> </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" data-aos="slide-left" id="modeloB2" role="tabpanel"
-                            aria-labelledby="modeloB2-tab">
-                        </div>
-
-                        <div class="tab-pane fade" data-aos="slide-left" id="plantasB" role="tabpanel"
-                            aria-labelledby="plantas-tab">
-                            <div class="row">
-                                <div class="col-lg-12 md-mb-50" style="padding-right: 10%;">
-                                    <div class="sec-title" style="text-align: right;">
-                                        <h2 class="title2 pb-17"
-                                            style="color:var(--color_principal); font-size: 42px; font-weight: 500; text-align: left; margin: 0px; padding-left: 5%;">
-                                            <!--<span class="watermark">Modelos</span>-->
-                                            <span class="color-principal"
-                                                style="font-size: 30px; letter-spacing: 3px;">MODELO <span
-                                                    class="color-principal"
-                                                    style="font-size: 42px;"><strong>modelo4</strong></span>
-                                                <hr class="color-secundario" style="opacity:1; width:30%;">
-                                        </h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 pl-30 md-pl-15">
-                                    <img src="img/modelo4/planta baja.webp"
-                                    loading="lazy" style="top: -100px; z-index: -5; position: relative;" alt="Project">
-                                    <div class="row" style="top: -150px; z-index: -5; position: relative;">
-                                        <div class="col-lg-4 col-6">
-                                            <h5 class="color-principal">Planta Baja</h5>
-                                        </div>
-                                        <div class="col-lg-8 col-6">
-                                            <hr class="color-secundario" style="height:1px; opacity: 1;">
-                                        </div>
-                                        <div class="col-lg-4 col-6 rs-about style1">
-                                            <div class="box-wrapper mb-22">
-                                                <div class="icon-box">
-                                                    <i class="fa fa-check"></i>
-                                                </div>
-                                                <h4 class="box-title" style="color:#454545">Cochera</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-6 rs-about style1">
-                                            <div class="box-wrapper mb-22">
-                                                <div class="icon-box">
-                                                    <i class="fa fa-check"></i>
-                                                </div>
-                                                <h4 class="box-title" style="color:#454545">Sala</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-6 rs-about style1">
-                                            <div class="box-wrapper mb-22">
-                                                <div class="icon-box">
-                                                    <i class="fa fa-check"></i>
-                                                </div>
-                                                <h4 class="box-title" style="color:#454545">Comedor</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-6 rs-about style1">
-                                            <div class="box-wrapper mb-22">
-                                                <div class="icon-box">
-                                                    <i class="fa fa-check"></i>
-                                                </div>
-                                                <h4 class="box-title" style="color:#454545">Cocina</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-6 rs-about style1">
-                                            <div class="box-wrapper mb-22">
-                                                <div class="icon-box">
-                                                    <i class="fa fa-check"></i>
-                                                </div>
-                                                <h4 class="box-title" style="color:#454545">1/2 Baño</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-6 rs-about style1">
-                                            <div class="box-wrapper mb-22">
-                                                <div class="icon-box">
-                                                    <i class="fa fa-check"></i>
-                                                </div>
-                                                <h4 class="box-title" style="color:#454545">1 Recamara</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-6 rs-about style1">
-                                            <div class="box-wrapper mb-22">
-                                                <div class="icon-box">
-                                                    <i class="fa fa-check"></i>
-                                                </div>
-                                                <h4 class="box-title" style="color:#454545">Patio de servicio</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-6 rs-about style1">
-                                            <div class="box-wrapper mb-22">
-                                                <div class="icon-box">
-                                                    <i class="fa fa-check"></i>
-                                                </div>
-                                                <h4 class="box-title" style="color:#454545">Jardín</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 pl-30 md-pl-15"
-                                    style="top: -100px; z-index: -5; position: relative;">
-                                    <img src="img/modelo4/planta alta.webp" loading="lazy" alt="Project">
-
-                                    <div class="row" style="top: -50px; position: relative;">
-                                        <div class="col-lg-4 col-6">
-                                            <h5 class="color-principal">Planta Alta</h5>
-                                        </div>
-                                        <div class="col-lg-8 col-6">
-                                            <hr class="color-secundario" style="height:1px; opacity: 1;">
-                                        </div>
-                                        <div class="col-lg-4 col-6 rs-about style1">
-                                            <div class="box-wrapper mb-22">
-                                                <div class="icon-box">
-                                                    <i class="fa fa-check"></i>
-                                                </div>
-                                                <h4 class="box-title" style="color:#454545">2 Recámaras</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-6 rs-about style1">
-                                            <div class="box-wrapper mb-22">
-                                                <div class="icon-box">
-                                                    <i class="fa fa-check"></i>
-                                                </div>
-                                                <h4 class="box-title" style="color:#454545">Vestidor</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-6 rs-about style1">
-                                            <div class="box-wrapper mb-22">
-                                                <div class="icon-box">
-                                                    <i class="fa fa-check"></i>
-                                                </div>
-                                                <h4 class="box-title" style="color:#454545">2 Baño</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" data-aos="slide-left" id="interioresB" role="tabpanel"
-                            aria-labelledby="interiores-tab">
-                            <div class="row">
-                                <div class="col-lg-12 md-mb-50" style="padding-right : 10%;">
-                                    <div class="sec-title" style="text-align: right;">
-                                        <h2 class="title2 pb-17"
-                                            style="color:var(--color_principal); font-size: 42px; font-weight: 500; text-align: left; margin: 0px; padding-left: 5%;">
-                                            <!--<span class="watermark">Modelos</span>-->
-                                            <span class="color-principal"
-                                                style="font-size: 30px; letter-spacing: 3px;">MODELO <span
-                                                    class="color-principal"
-                                                    style="font-size: 42px;"><strong>modelo4</strong></span>
-                                                <hr class="color-secundario" style="opacity:1; width:30%;">
-                                        </h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12 col-12">
-                                    <iframe loading="lazy" src="modelo4.html" class="modelo-interiores" class="modelo-interiores"
-                                        style="width:100%; height: auto;"></iframe>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Fin Modelo Berlín-->
+        
 
         <!-- Process Section Start -->
         <div id="rs-avanceobra" class="rs-process style1 " style="background-color: #fff;">
@@ -2405,7 +2132,7 @@
         </style>
 
         <a href="https://micasamx.com/" target="_blank" class="sticky-btn sticky-btn--micasa" style="z-index: 99;">
-            <img src="img/MCM-2.png" loading="lazy" alt="fachada" style="border-radius:5px 0 0 5px !important; "></a>
+            <img src="img/MCM-2.webp" loading="lazy" alt="fachada" style="border-radius:5px 0 0 5px !important; "></a>
         </a>
     </footer>
     <!-- Footer End -->
@@ -2545,8 +2272,23 @@
     <script>
         AOS.init();
     </script>
+
     <script defer>
-        /*********************Modelo PRAGA*******************************/
+        
+        function cambiarFrame(modelo,seccion){
+            
+            var nuevo="#frame"+modelo+seccion;
+            var frame="frame"+modelo+"Activo";           
+
+            $("."+frame).removeClass('active show ' + frame );
+            //$(nuevo).removeClass('tab-pane fade aos-init aos-animate active show frameActivo');
+            setTimeout(function () {
+                $(nuevo).addClass('tab-pane fade show active aos-init aos-animate ' + frame);
+            }, 100);
+
+        }
+
+        /*********************Modelo PRAGA******************************
         var iconButton = $("#modeloBtn1");
         iconButton.on("click", function () {
             $("#modelo1").removeClass('tab-pane fade aos-init aos-animate active show');
@@ -2577,139 +2319,8 @@
                 $("#interiores").addClass('tab-pane fade show active aos-init aos-animate');
             }, 100);
         });
-        /****************************Fin Modelo PRAGA******************************************************/
+        ***************************Fin Modelo PRAGA******************************************************/
 
-        /************************** Inicio Modelo Málaga**********************************************/
-        var iconButtonM = $("#modeloBtnM1");
-        iconButtonM.on("click", function () {
-            $("#modeloM1").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#modeloM1").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-        var iconButtonM2 = $("#modeloBtnM2");
-        iconButtonM2.on("click", function () {
-            $("#modeloM2").removeClass('tab-pane fade show active aos-animate');
-            setTimeout(function () {
-                $("#modeloM2").addClass('tab-pane fade show active aos-animate');
-            }, 100);
-        });
-
-        var iconButtonM3 = $("#plantasBtnM");
-        iconButtonM3.on("click", function () {
-            $("#plantasM").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#plantasM").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-
-        var iconButtonM4 = $("#interioresBtnM");
-        iconButtonM4.on("click", function () {
-            $("#interioresM").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#interioresM").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-        /*****************************Fin modelo Málaga***************************************/
-
-        /************************** Inicio Modelo Viena**********************************************/
-        var iconButtonV = $("#modeloBtnV1");
-        iconButtonV.on("click", function () {
-            $("#modeloV1").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#modeloV1").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-        var iconButtonV2 = $("#modeloBtnV2");
-        iconButtonV2.on("click", function () {
-            $("#modeloV2").removeClass('tab-pane fade show active aos-animate');
-            setTimeout(function () {
-                $("#modeloV2").addClass('tab-pane fade show active aos-animate');
-            }, 100);
-        });
-
-        var iconButtonV3 = $("#plantasBtnV");
-        iconButtonV3.on("click", function () {
-            $("#plantasV").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#plantasV").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-
-        var iconButtonV4 = $("#interioresBtnV");
-        iconButtonV4.on("click", function () {
-            $("#interioresV").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#interioresV").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-        /*****************************Fin modelo Málaga***************************************/
-
-        /************************** Inicio Modelo Berlín**********************************************/
-        var iconButtonB = $("#modeloBtnB1");
-        iconButtonB.on("click", function () {
-            $("#modeloB1").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#modeloB1").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-        var iconButtonB2 = $("#modeloBtnB2");
-        iconButtonB2.on("click", function () {
-            $("#modeloB2").removeClass('tab-pane fade show active aos-animate');
-            setTimeout(function () {
-                $("#modeloB2").addClass('tab-pane fade show active aos-animate');
-            }, 100);
-        });
-
-        var iconButtonB3 = $("#plantasBtnB");
-        iconButtonB3.on("click", function () {
-            $("#plantasB").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#plantasB").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-
-        var iconButtonB4 = $("#interioresBtnB");
-        iconButtonB4.on("click", function () {
-            $("#interioresB").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#interioresB").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-        /*****************************Fin modelo Málaga***************************************/
-
-        /************************** Inicio Modelo Berlín**********************************************/
-        var iconButtonP = $("#modeloBtnP1");
-        iconButtonP.on("click", function () {
-            $("#modeloP1").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#modeloP1").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-        var iconButtonP2 = $("#modeloBtnP2");
-        iconButtonP2.on("click", function () {
-            $("#modeloP2").removeClass('tab-pane fade show active aos-animate');
-            setTimeout(function () {
-                $("#modeloP2").addClass('tab-pane fade show active aos-animate');
-            }, 100);
-        });
-
-        var iconButtonP3 = $("#plantasBtnP");
-        iconButtonP3.on("click", function () {
-            $("#plantasP").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#plantasP").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-
-        var iconButtonP4 = $("#interioresBtnP");
-        iconButtonP4.on("click", function () {
-            $("#interioresP").removeClass('tab-pane fade aos-init aos-animate active show');
-            setTimeout(function () {
-                $("#interioresP").addClass('tab-pane fade show active aos-init aos-animate');
-            }, 100);
-        });
-            /*****************************Fin modelo Málaga***************************************/
 
     </script>
     <script defer type="text/javascript">

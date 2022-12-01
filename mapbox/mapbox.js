@@ -1,5 +1,7 @@
+
 (function () {
-    L.mapbox.accessToken = 'pk.eyJ1Ijoib2xpdmExMjMiLCJhIjoiY2wzdDZzMHh1MXh6ajNib2VhcHR4dWx3ZSJ9.e1SYRWtDEVsfVaId3w5tAg';
+    //L.mapbox.accessToken = 'pk.eyJ1Ijoib2xpdmExMjMiLCJhIjoiY2wzdDZzMHh1MXh6ajNib2VhcHR4dWx3ZSJ9.e1SYRWtDEVsfVaId3w5tAg';
+    L.mapbox.accessToken = 'pk.eyJ1IjoiY3VtYnJlZGVsbWFycXVlcyIsImEiOiJjbDRlb2dsbzUwNWVnM2pwbWduenJ6a25iIn0.3NCM1w709XBamuZQYakIQQ';
     var geojson = { 
         type: 'FeatureCollection', 
         features: [ 
@@ -16,8 +18,8 @@
                     "escuelas":                 true, 
                     "hoteles":                  true,
                     "restaurant_food":          true, 
-                    "zona_industrial":                   true,
-                    "plaza":                 true, 
+                    "zona_industrial":          true,
+                    "plaza":                    true, 
                     "marker-color": "#ff0000",
                     "marker-size": "large", 
                     "marker-symbol": "circle" 
@@ -3439,8 +3441,8 @@
 
     var map = L.mapbox.map('map')    
         .setView([22.06777, -100.86215], 12)
-        .addLayer(L.mapbox.styleLayer('mapbox://styles/oliva123/cl7qbcuch000a14rugqz6f6sr'));
-
+        //.addLayer(L.mapbox.styleLayer('mapbox://styles/oliva123/cl7qbcuch000a14rugqz6f6sr'));
+        .addLayer(L.mapbox.styleLayer('mapbox://styles/cumbredelmarques/clah037sz000b15qm672vzbf1'));
     var markers = L.mapbox.featureLayer()
         .setGeoJSON(geojson)
         .addTo(map);
