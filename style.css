@@ -379,6 +379,9 @@ ul.listing-style li i {
   display: flex;
   align-items: center;
 }
+.separacion{
+  height: 100px;
+}
 .features-content ul.rs-features-list li i {
   color: #ffffff;
   background-color: transparent;
@@ -6272,7 +6275,10 @@ body .search-modal .close:hover {
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) {
-
+  .separacion{
+    height: 50px;
+  }
+  
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -6289,6 +6295,10 @@ body .search-modal .close:hover {
   .informes-div a {
     margin-top: 0px !important;
     margin-bottom: 0px;
+  }
+  .contact-address{
+    padding: 10px;
+    background-color: var(--color_principal);
   }
 
 }
