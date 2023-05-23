@@ -1,6 +1,6 @@
 :root{/*colores*/
-  --color_principal: #00448c;
-  --color_secundario: #c0d1e3;
+  --color_principal: #15355d;
+  --color_secundario: #b0daeb;
 
   /*
   var(--color_principal)
@@ -266,7 +266,7 @@ ul {
   background-size: cover;
 }
 .bg13 { 
-  background-image: url(img/marga-agua.webp);
+  background-image: url(img/marca-agua.webp);
   background-repeat: no-repeat;
 }
 .bg14 {
