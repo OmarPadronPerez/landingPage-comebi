@@ -17,3 +17,9 @@ Formulario para el envio de informacion al sistema para su posterior contacto
 <p align='center'>
   <img src="https://github.com/OmarPadronPerez/landingPage-comebi/assets/87333744/0978808c-af31-4cb6-a9f9-9836a11a7b68" width="430">
 </p>
+
+<h2>Chat de contacto</h2>
+Chat flotante para un contacto directo con el personal de ventas
+<p align='center'>
+<img src="https://github.com/OmarPadronPerez/landingPage-comebi/assets/87333744/35c58141-7257-44c9-9d7b-87a8cc47ed3b" width="230">
+</p>
